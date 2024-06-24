@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MessengerApp.ViewModels.UserViewModel>
+
+<div class="container">
+    <h2>Registered Users</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
